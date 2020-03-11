@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         String mensagem = editTextMensagem.getText().toString() ;
 
-        intent.putExtra("MENSAGEM", mensagem);
+        intent.putExtra(App.MENSAGEM, mensagem);
         startActivity(intent);
 
         //todo: enviar mensagem

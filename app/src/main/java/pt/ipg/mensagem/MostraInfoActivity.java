@@ -15,7 +15,7 @@ public class MostraInfoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mostra_info);
 
         Intent intent = getIntent();
-        String mensagem = intent.getStringExtra("MENSAGEM");
+        String mensagem = intent.getStringExtra(App.MENSAGEM);
 
         TextView textViewMensagem = (TextView) findViewById(R.id.textViewMensagem);
         textViewMensagem.setText(mensagem);
