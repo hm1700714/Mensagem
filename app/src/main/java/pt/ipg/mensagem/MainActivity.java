@@ -18,8 +18,14 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, MostraInfoActivity.class);
 
+
+        String mensagem = "ola mundo";
+
+        intent.putExtra("MENSAGEM", mensagem);
         startActivity(intent);
-        
+
+
+
         //todo: enviar mensagem
     }
 }
